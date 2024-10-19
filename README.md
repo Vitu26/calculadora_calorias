@@ -1,16 +1,92 @@
-# calculo_calorias
+Calculadora de Calorias
+Este aplicativo Flutter calcula a quantidade diária recomendada de calorias com base no perfil físico do usuário, nível de atividade física e objetivo (perda ou ganho de peso). Além disso, exibe artigos relacionados ao objetivo do usuário e salva os cálculos localmente.
 
-A new Flutter project.
+Funcionalidades
+Cálculo de Calorias: Baseado na fórmula de Harris-Benedict, ajustada para perda ou ganho de peso.
+Exibição de Artigos Relacionados: Lista de artigos relevantes com base no objetivo (perda ou ganho de peso).
+Armazenamento Local: O último cálculo de calorias é salvo localmente e recuperado ao reabrir o app.
+Interface Simples e Responsiva: Usabilidade clara e intuitiva em dispositivos móveis (Android e iOS).
+Pré-requisitos
+Antes de começar, certifique-se de ter instalado:
 
-## Getting Started
+Flutter SDK
+Um emulador Android/iOS ou um dispositivo físico
+Um editor de código como Android Studio ou VSCode
+Instalação
+Clone o repositório:
 
-This project is a starting point for a Flutter application.
+bash
+Copiar código
+git clone <URL_DO_REPOSITORIO>
+cd calculo_calorias
+Instale as dependências:
 
-A few resources to get you started if this is your first Flutter project:
+bash
+Copiar código
+flutter pub get
+Conecte um emulador ou dispositivo físico e execute o app:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+bash
+Copiar código
+flutter run
+Estrutura do Projeto
+bash
+Copiar código
+calculo_calorias/
+├── lib/
+│   ├── components/        # Componentes reutilizáveis (botões, campos de texto)
+│   ├── models/            # Modelos de dados (UserProfile, Article)
+│   ├── screens/           # Telas principais do app
+│   ├── services/          # Lógica de chamadas API e cache local
+│   ├── main.dart          # Ponto de entrada do app
+├── assets/                # Imagens e ícones
+├── pubspec.yaml           # Configurações e dependências do Flutter
+└── README.md              # Documentação do projeto
+Uso
+1. Tela de Entrada (InputScreen)
+Insira seu peso, altura, idade, gênero, nível de atividade física e objetivo (perda ou ganho de peso).
+Clique no botão Calcular para ver a quantidade recomendada de calorias.
+2. Tela de Resultado (ResultScreen)
+Exibe o cálculo de calorias e uma lista de artigos relacionados ao seu objetivo.
+Clique em qualquer artigo para lê-lo em detalhes.
+3. Armazenamento Local
+O último cálculo é salvo automaticamente no dispositivo. Quando o app é reaberto, se houver um cálculo salvo, o app exibirá diretamente a tela de resultados.
+4. Splash Screen
+Verifica se há cálculos salvos no cache ao iniciar o app.
+Exemplo de Uso
+Entrada de Dados:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Preencha seus dados como peso, altura, idade, etc.
+Escolha seu objetivo (perda ou ganho de peso) e nível de atividade física.
+Cálculo:
+
+O app calcula as calorias diárias recomendadas e exibe o resultado na próxima tela.
+Artigos Relacionados:
+
+Veja artigos que podem ajudá-lo a alcançar seu objetivo, seja perder peso ou ganhar massa.
+Dependências Principais
+flutter: SDK principal para desenvolvimento.
+cached_network_image: Cache de imagens de rede.
+shared_preferences: Armazenamento local para salvar o último cálculo.
+intl: Manipulação de datas.
+http: Realiza chamadas API para buscar artigos.
+Executando Testes
+Para rodar testes (caso tenham sido implementados):
+
+bash
+Copiar código
+flutter test
+Contribuindo
+Faça um fork do projeto.
+Crie um branch para suas alterações:
+bash
+Copiar código
+git checkout -b minha-nova-feature
+Commit suas alterações:
+bash
+Copiar código
+git commit -m "Minha nova feature"
+Envie seu branch:
+bash
+Copiar código
+git push origin minha-nova-feature
