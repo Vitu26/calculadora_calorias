@@ -1,7 +1,7 @@
-Calculadora de Calorias
+##Calculadora de Calorias
 Este aplicativo Flutter calcula a quantidade diária recomendada de calorias com base no perfil físico do usuário, nível de atividade física e objetivo (perda ou ganho de peso). Além disso, exibe artigos relacionados ao objetivo do usuário e salva os cálculos localmente.
 
-Funcionalidades
+#Funcionalidades
 Cálculo de Calorias: Baseado na fórmula de Harris-Benedict, ajustada para perda ou ganho de peso.
 Exibição de Artigos Relacionados: Lista de artigos relevantes com base no objetivo (perda ou ganho de peso).
 Armazenamento Local: O último cálculo de calorias é salvo localmente e recuperado ao reabrir o app.
@@ -9,19 +9,19 @@ Interface Simples e Responsiva: Usabilidade clara e intuitiva em dispositivos m�
 Pré-requisitos
 Antes de começar, certifique-se de ter instalado:
 
-Flutter SDK
+#Flutter SDK
 Um emulador Android/iOS ou um dispositivo físico
 Um editor de código como Android Studio ou VSCode
 Instalação
 Clone o repositório:
 
-bash
+#bash
 Copiar código
 git clone <URL_DO_REPOSITORIO>
 cd calculo_calorias
 Instale as dependências:
 
-bash
+#bash
 Copiar código
 flutter pub get
 Conecte um emulador ou dispositivo físico e execute o app:
@@ -42,7 +42,8 @@ calculo_calorias/
 ├── assets/                # Imagens e ícones
 ├── pubspec.yaml           # Configurações e dependências do Flutter
 └── README.md              # Documentação do projeto
-Uso
+
+#Uso
 1. Tela de Entrada (InputScreen)
 Insira seu peso, altura, idade, gênero, nível de atividade física e objetivo (perda ou ganho de peso).
 Clique no botão Calcular para ver a quantidade recomendada de calorias.
