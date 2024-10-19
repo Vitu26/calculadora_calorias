@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 # Calculadora de Calorias
 
-=======
+
 ###Calculadora de Calorias
->>>>>>> 66487fdd49071c08be55d79bdefb3c07b9dc28a3
+
 Este aplicativo Flutter calcula a quantidade diária recomendada de calorias com base no perfil físico do usuário, nível de atividade física e objetivo (perda ou ganho de peso). Além disso, exibe artigos relacionados ao objetivo do usuário e salva os cálculos localmente.
 
 ## Funcionalidades
@@ -25,28 +25,23 @@ Antes de começar, certifique-se de ter instalado:
 
 1. Clone o repositório:
 
-   ```bash
-   git clone <URL_DO_REPOSITORIO>
+
+   git clone <https://github.com/Vitu26/calculadora_calorias>
    cd calculo_calorias
 Instale as dependências:
 
-bash
-Sempre exibir os detalhes
 
-Copiar código
+
+
 flutter pub get
 Conecte um emulador ou dispositivo físico e execute o app:
 
-bash
-Sempre exibir os detalhes
 
-Copiar código
+
+
 flutter run
 Estrutura do Projeto
-bash
-Sempre exibir os detalhes
 
-Copiar código
 calculo_calorias/
 ├── lib/
 │   ├── components/        # Componentes reutilizáveis (botões, campos de texto)
@@ -82,37 +77,23 @@ cached_network_image: Usado para carregar e salvar imagens da internet de forma 
 shared_preferences: Armazenamento local para salvar o último cálculo.
 intl: Manipulação de datas.
 http: Realiza chamadas API para buscar artigos.
-Executando Testes
-Para rodar testes (caso tenham sido implementados):
 
-bash
-Sempre exibir os detalhes
 
-Copiar código
-flutter test
+
+
 Contribuindo
 Faça um fork do projeto.
 
 Crie um branch para suas alterações:
 
-bash
-Sempre exibir os detalhes
 
-Copiar código
 git checkout -b minha-nova-feature
 Commit suas alterações:
 
-bash
-Sempre exibir os detalhes
 
-Copiar código
 git commit -m "Minha nova feature"
 Envie seu branch:
 
-bash
-Sempre exibir os detalhes
 
-Copiar código
 git push origin minha-nova-feature
-Licença
-Este projeto está sob a licença MIT. """
+
