@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 # Calculadora de Calorias
 
+=======
+###Calculadora de Calorias
+>>>>>>> 66487fdd49071c08be55d79bdefb3c07b9dc28a3
 Este aplicativo Flutter calcula a quantidade diária recomendada de calorias com base no perfil físico do usuário, nível de atividade física e objetivo (perda ou ganho de peso). Além disso, exibe artigos relacionados ao objetivo do usuário e salva os cálculos localmente.
 
 ## Funcionalidades
