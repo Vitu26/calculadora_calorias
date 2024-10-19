@@ -13,7 +13,7 @@ class ArticleScreen extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
 
-    // Dividindo o conteúdo em parágrafos, baseados em quebras de linha.
+    // Divide o conteúdo em paragrafos, baseado na quebra de linhas.
     List<String> paragrafos = article.content.split('\n');
 
     return Scaffold(
@@ -36,7 +36,7 @@ class ArticleScreen extends StatelessWidget {
                     height: screenHeight * 0.3,
                     fit: BoxFit.cover,
                     placeholder: (context, url) =>
-                        Center(child: CircularProgressIndicator()),
+                        const Center(child: CircularProgressIndicator()),
                     errorWidget: (context, url, error) => Icon(Icons.error),
                   ),
                 ),
