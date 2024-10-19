@@ -42,16 +42,19 @@ Conecte um emulador ou dispositivo físico e execute o app:
 flutter run
 Estrutura do Projeto
 
+
 calculo_calorias/
--├── lib/
--│   ├── components/        # Componentes reutilizáveis (botões, campos de texto)
--│   ├── models/            # Modelos de dados (UserProfile, Article)
--│   ├── screens/           # Telas principais do app (InputScreen, ResultScreen)
--│   ├── services/          # Lógica de chamadas API e cache local
--│   ├── main.dart          # Ponto de entrada do app
--├── assets/                # Imagens e ícones
--├── pubspec.yaml           # Configurações e dependências do Flutter
--└── README.md              # Documentação do projeto
+├── lib/
+│   ├── components/        # Componentes reutilizáveis (botões, campos de texto)
+│   ├── models/            # Modelos de dados (UserProfile, Article)
+│   ├── screens/           # Telas principais do app (InputScreen, ResultScreen)
+│   ├── services/          # Lógica de chamadas API e cache local
+│   ├── main.dart          # Ponto de entrada do app
+├── assets/                # Imagens e ícones
+├── pubspec.yaml           # Configurações e dependências do Flutter
+└── README.md              # Documentação do projeto
+
+
 Uso
 1. Tela de Entrada (InputScreen)
 Insira seu peso, altura, idade, gênero, nível de atividade física e objetivo (perda ou ganho de peso).
