@@ -1,42 +1,53 @@
-Calculadora de Calorias
+# Calculadora de Calorias
+
 Este aplicativo Flutter calcula a quantidade diária recomendada de calorias com base no perfil físico do usuário, nível de atividade física e objetivo (perda ou ganho de peso). Além disso, exibe artigos relacionados ao objetivo do usuário e salva os cálculos localmente.
 
-Funcionalidades
-Cálculo de Calorias: Baseado na fórmula de Harris-Benedict, ajustada para perda ou ganho de peso.
-Exibição de Artigos Relacionados: Lista de artigos relevantes com base no objetivo (perda ou ganho de peso).
-Armazenamento Local: O último cálculo de calorias é salvo localmente e recuperado ao reabrir o app.
-Interface Simples e Responsiva: Usabilidade clara e intuitiva em dispositivos móveis (Android e iOS).
-Pré-requisitos
+## Funcionalidades
+
+- **Cálculo de Calorias**: Baseado na fórmula de **Harris-Benedict**, ajustada para perda ou ganho de peso.
+- **Exibição de Artigos Relacionados**: Lista de artigos relevantes com base no objetivo (perda ou ganho de peso).
+- **Armazenamento Local**: O último cálculo de calorias é salvo localmente e recuperado ao reabrir o app.
+- **Interface Simples e Responsiva**: Usabilidade clara e intuitiva em dispositivos móveis (Android e iOS).
+
+## Pré-requisitos
+
 Antes de começar, certifique-se de ter instalado:
 
-Flutter SDK
-Um emulador Android/iOS ou um dispositivo físico
-Um editor de código como Android Studio ou VSCode
-Instalação
-Clone o repositório:
+- **Flutter SDK**
+- Um emulador Android/iOS ou um dispositivo físico
+- Um editor de código como **Android Studio** ou **VSCode**
 
-bash
-Copiar código
-git clone <URL_DO_REPOSITORIO>
-cd calculo_calorias
+## Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   cd calculo_calorias
 Instale as dependências:
 
 bash
+Sempre exibir os detalhes
+
 Copiar código
 flutter pub get
 Conecte um emulador ou dispositivo físico e execute o app:
 
 bash
+Sempre exibir os detalhes
+
 Copiar código
 flutter run
 Estrutura do Projeto
 bash
+Sempre exibir os detalhes
+
 Copiar código
 calculo_calorias/
 ├── lib/
 │   ├── components/        # Componentes reutilizáveis (botões, campos de texto)
 │   ├── models/            # Modelos de dados (UserProfile, Article)
-│   ├── screens/           # Telas principais do app
+│   ├── screens/           # Telas principais do app (InputScreen, ResultScreen)
 │   ├── services/          # Lógica de chamadas API e cache local
 │   ├── main.dart          # Ponto de entrada do app
 ├── assets/                # Imagens e ícones
@@ -55,18 +66,15 @@ O último cálculo é salvo automaticamente no dispositivo. Quando o app é reab
 Verifica se há cálculos salvos no cache ao iniciar o app.
 Exemplo de Uso
 Entrada de Dados:
-
 Preencha seus dados como peso, altura, idade, etc.
 Escolha seu objetivo (perda ou ganho de peso) e nível de atividade física.
 Cálculo:
-
 O app calcula as calorias diárias recomendadas e exibe o resultado na próxima tela.
 Artigos Relacionados:
-
 Veja artigos que podem ajudá-lo a alcançar seu objetivo, seja perder peso ou ganhar massa.
 Dependências Principais
-flutter: SDK principal para desenvolvimento.
-cached_network_image: Cache de imagens de rede.
+flutter: SDK principal para desenvolvimento mobile.
+cached_network_image: Usado para carregar e salvar imagens da internet de forma eficiente.
 shared_preferences: Armazenamento local para salvar o último cálculo.
 intl: Manipulação de datas.
 http: Realiza chamadas API para buscar artigos.
@@ -74,6 +82,8 @@ Executando Testes
 Para rodar testes (caso tenham sido implementados):
 
 bash
+Sempre exibir os detalhes
+
 Copiar código
 flutter test
 Contribuindo
@@ -82,15 +92,23 @@ Faça um fork do projeto.
 Crie um branch para suas alterações:
 
 bash
+Sempre exibir os detalhes
+
 Copiar código
 git checkout -b minha-nova-feature
 Commit suas alterações:
 
 bash
+Sempre exibir os detalhes
+
 Copiar código
 git commit -m "Minha nova feature"
 Envie seu branch:
 
 bash
+Sempre exibir os detalhes
+
 Copiar código
 git push origin minha-nova-feature
+Licença
+Este projeto está sob a licença MIT. """
